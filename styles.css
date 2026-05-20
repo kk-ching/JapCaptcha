@@ -6,17 +6,18 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    background: #1e1e1e;
+    color: #e0e0e0;
     padding: 20px;
 }
 
 .container {
     max-width: 700px;
     margin: 0 auto;
-    background: white;
+    background: #2a2a2a;
     padding: 20px;
     border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 
@@ -27,13 +28,14 @@ h1 {
 }
 
 .header {
-    background: white;
+    background: #2a2a2a;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
     margin-bottom: 20px;
+    color: #e0e0e0;
 }
 
 .header h1 {
@@ -43,9 +45,10 @@ h1 {
 
 .lang-select {
     padding: 8px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #555;
     border-radius: 3px;
-    background: white;
+    background: #3a3a3a;
+    color: #e0e0e0;
     cursor: pointer;
     font-size: 0.95em;
 }
@@ -57,8 +60,9 @@ h1 {
 
 .lang-btn {
     padding: 8px 12px;
-    border: 2px solid #ccc;
-    background: white;
+    border: 2px solid #555;
+    background: #3a3a3a;
+    color: #e0e0e0;
     border-radius: 3px;
     cursor: pointer;
     font-size: 0.9em;
@@ -97,8 +101,9 @@ h1 {
 .char-btn {
     padding: 15px;
     font-size: 2em;
-    border: 2px solid #ccc;
-    background: white;
+    border: 2px solid #555;
+    background: #3a3a3a;
+    color: #e0e0e0;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.2s;
@@ -106,8 +111,8 @@ h1 {
 }
 
 .char-btn:hover {
-    border-color: #666;
-    background: #f9f9f9;
+    border-color: #777;
+    background: #444;
 }
 
 .char-btn.selected {
@@ -125,12 +130,15 @@ label {
     font-weight: bold;
     margin-bottom: 8px;
     font-size: 0.95em;
+    color: #e0e0e0;
 }
 
 .output-field {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #555;
+    background: #3a3a3a;
+    color: #e0e0e0;
     border-radius: 3px;
     font-family: Arial, sans-serif;
     font-size: 1.1em;
@@ -140,7 +148,7 @@ label {
 .output-field:focus {
     outline: none;
     border-color: #4CAF50;
-    box-shadow: 0 0 3px rgba(76, 175, 80, 0.2);
+    box-shadow: 0 0 3px rgba(76, 175, 80, 0.3);
 }
 
 .button-group {
@@ -190,4 +198,23 @@ label {
 
 .refresh-btn:active {
     background: #0056b3;
+}
+
+.instruction {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 0.95em;
+    color: #e0e0e0;
+}
+
+.why-box {
+    background: #2a2a2a;
+    color: #e0e0e0;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.why-box h1 {
+    color: #e0e0e0;
 }
