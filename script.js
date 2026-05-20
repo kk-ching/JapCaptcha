@@ -84,7 +84,7 @@ function renderAllCharacters() {
     riBtn.className = 'char-btn';
     riBtn.id = 'riBtn';
     const img = document.createElement('img');
-    img.src = './ri.jpg';
+    img.src = 'ri._handwritten.jpg';
     img.alt = 'り';
     riBtn.appendChild(img);
     riBtn.addEventListener('click', (e) => toggleCharacter('り', riBtn));
