@@ -79,6 +79,16 @@ function renderAllCharacters() {
         btn.addEventListener('click', (e) => toggleCharacter(char, btn));
         grid.appendChild(btn);
     });
+
+    const riBtn = document.createElement('button');
+    riBtn.className = 'char-btn';
+    riBtn.id = 'riBtn';
+    const img = document.createElement('img');
+    img.src = 'ri.jpg';
+    img.alt = 'り';
+    riBtn.appendChild(img);
+    riBtn.addEventListener('click', (e) => toggleCharacter('り', riBtn));
+    grid.appendChild(riBtn);
 }
 
 function toggleCharacter(char, btn) {
@@ -95,6 +105,7 @@ function setupEventListeners() {
     document.getElementById('copyBtn').addEventListener('click', copyToClipboard);
     document.getElementById('clearBtn').addEventListener('click', clearSelection);
 }
+
 
 function copyToClipboard() {
     const output = document.getElementById('romajiOutput');
