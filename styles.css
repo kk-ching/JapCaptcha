@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.header {
+    background: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.lang-select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: white;
+    cursor: pointer;
+    font-size: 0.95em;
+}
+
+.lang-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.lang-btn {
+    padding: 8px 12px;
+    border: 2px solid #ccc;
+    background: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.lang-btn:hover {
+    border-color: #4CAF50;
+    color: #4CAF50;
+}
+
+.lang-btn.active {
+    background: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+.solver-box {
+    margin-bottom: 30px;
+}
+
+.instruction {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+.char-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.char-btn {
+    padding: 15px;
+    font-size: 2em;
+    border: 2px solid #ccc;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.char-btn:hover {
+    border-color: #666;
+    background: #f9f9f9;
+}
+
+.char-btn.selected {
+    background: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+.output-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+.output-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
+    margin-bottom: 12px;
+}
+
+.output-field:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.copy-btn, .clear-btn, .refresh-btn {
+    flex: 1;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+.copy-btn:hover, .clear-btn:hover, .refresh-btn:hover {
+    background: #45a049;
+}
+
+.copy-btn:active, .clear-btn:active, .refresh-btn:active {
+    background: #3d8b40;
+}
+
+.clear-btn {
+    background: #666;
+}
+
+.clear-btn:hover {
+    background: #555;
+}
+
+.clear-btn:active {
+    background: #444;
+}
+
+.refresh-btn {
+    background: #2196F3;
+}
+
+.refresh-btn:hover {
+    background: #0b7dda;
+}
+
+.refresh-btn:active {
+    background: #0056b3;
+}
